@@ -60,8 +60,8 @@ class LoginRequest extends FormRequest
         return [
             'success' => true,
             'message' => 'successfully loged in',
-            'token' => $user->createToken('users')->plainTextToken,
-            'user' => $user
+            'token'   => $user->createToken('users')->plainTextToken,
+            'user'    => $user
         ];
     }
 
